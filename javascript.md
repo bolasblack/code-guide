@@ -1,4 +1,4 @@
-# JavaScript 编码规范指南
+# JavaScript 编码规范
 
 ## 背景
 

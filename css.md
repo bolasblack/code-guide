@@ -1,4 +1,4 @@
-# CSS 编码规范指南
+# CSS 编码规范
 
 * 两个空格缩进
 
@@ -23,7 +23,7 @@
     * background
     * ...
 
-* 使用如下的属性编写顺序
+* 使用如下的属性编写顺序（根据作用分组，然后根据字母排序）
 
     ```css
     .item {
@@ -31,21 +31,22 @@
 
       /* 定位 */
       position: static;
-      z-index: 0;
       top: 0;
       right: 0;
       bottom: 0;
       left: 0;
+      z-index: 0;
 
-      /* 可视 */
-      display: block;
-      visibility: hidden;
-      float: none;
+      /* xx */
       clear: none;
-      overflow: hidden;
       clip: rect(0 0 0 0);
+      display: block;
+      float: none;
+      overflow: hidden;
+      visibility: hidden;
+      table-layout: fixed;
 
-      /* 盒模型 */
+      /* xx */
       box-sizing: content-box;
       margin: 0;
       padding: 0;
@@ -55,13 +56,6 @@
       height: auto;
       min-height: 0;
       max-height: 0;
-
-      /* 布局 */
-      table-layout: fixed;
-      empty-cells: show;
-      border-spacing: 0;
-      border-collapse: collapse;
-      list-style: none;
 
       /* 字体 */
       font: 1em sans-serif;
@@ -73,25 +67,29 @@
 
       /* 排版 */
       text-align: left;
-      vertical-align: top;
-      line-height: 1;
-      white-space: normal;
       text-decoration: none;
       text-indent: 1;
       text-transform: uppercase;
+      line-height: 1;
       letter-spacing: 1;
+      vertical-align: top;
+      white-space: normal;
       word-spacing: normal;
 
-      /* 修饰 */
-      content: "";
-      cursor: default;
-      opacity: 1;
-      color: #d00;
-      text-shadow: 5px 5px 5px #d59;
+      /* 其他 */
+      background: #fff url("img.png") no-repeat 0 0;
       border: 1px solid #d00;
+      border-spacing: 0;
+      border-collapse: collapse;
       border-radius: 15px;
       box-shadow: inset 1px 0 0 #fff;
-      background: #fff url("../i/bg.png") no-repeat 0 0;
+      color: #d00;
+      content: "";
+      cursor: default;
+      empty-cells: show;
+      list-style: none;
+      opacity: 1;
+      text-shadow: 5px 5px 5px #d59;
     }
     ```
 
